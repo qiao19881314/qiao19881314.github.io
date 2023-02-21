@@ -33,7 +33,8 @@ import pandas as pd
 # I found it important to put this data in a tab-separated values format, because there are a lot of commas in this kind of data and comma-separated values can get messed up. However, you can modify the import statement, as pandas also has read_excel(), read_json(), and others.
 
 # In[3]:
-
+import os
+os.chdir("markdown_generator")
 publications = pd.read_csv("publications.tsv", sep="\t", header=0)
 publications
 
