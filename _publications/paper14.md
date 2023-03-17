@@ -1,7 +1,7 @@
 ---
 title: "BiLSTM-based Individual Cattle Identification for Automated Precision Livestock Farming"
 collection: publications
-permalink: /publication/2020/10/8-http://qiao1314.github.io/files/paper14.pdf
+permalink: /files/paper14.pdf
 excerpt: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(14).'
 date: 2020/10/8
 venue: 'This paper is about the number 1. The number 15 is left for future work.'

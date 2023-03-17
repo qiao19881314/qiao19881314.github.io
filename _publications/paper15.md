@@ -1,7 +1,7 @@
 ---
 title: "Data Augmentation for Deep Learning based Cattle Segmentation in Precision Livestock Farming"
 collection: publications
-permalink: /publication/2020/12/8-http://qiao1314.github.io/files/paper15.pdf
+permalink: /files/paper15.pdf
 excerpt: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(15).'
 date: 2020/12/8
 venue: 'This paper is about the number 1. The number 16 is left for future work.'

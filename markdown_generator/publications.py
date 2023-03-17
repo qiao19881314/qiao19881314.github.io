@@ -65,7 +65,8 @@ import os
 for row, item in publications.iterrows():
     
     md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
-    html_filename = str(item.pub_date) + "-" + item.url_slug
+    # html_filename = str(item.pub_date) + "-" + item.url_slug
+    html_filename = item.url_slug  # paper_name
     year = item.pub_date[:4]
     
     ## YAML variables
@@ -74,7 +75,8 @@ for row, item in publications.iterrows():
     
     md += """collection: publications"""
     
-    md += """\npermalink: /publication/""" + html_filename
+    # md += """\npermalink: /publication/""" + html_filename
+    md += """\npermalink: /files/""" + html_filename
     
     if len(str(item.excerpt)) > 5:
         md += "\nexcerpt: '" + html_escape(item.excerpt) + "'"
@@ -99,10 +101,57 @@ for row, item in publications.iterrows():
         md += "\n" + html_escape(item.excerpt) + "\n"
         
     md += "\nRecommended citation: " + item.citation
-    
-    md_filename = os.path.basename(md_filename)
+    md_filename = os.path.basename(os.path.splitext(html_filename)[0]+".md")  # md和pdf保持一直
        
     with open("../_publications/" + md_filename, 'w') as f:
         f.write(md)
 
 
+#  Invalid argument @ dir_s_mkdir - H:/academicpages.github.io-master/_site/publication/2019/3/4-http: (Errno::EINVAL)
+#  是因为我上传了论文信息后产生的， 应该是publications.tsv中有文字不是acsii编码
+'''
+应该是url_slug出错， qiao1314更改为正常的academicpages
+http://qiao1314.github.io/files/paper1.pdf
+http://qiao1314.github.io/files/paper2.pdf
+http://qiao1314.github.io/files/paper3.pdf
+http://qiao1314.github.io/files/paper4.pdf
+http://qiao1314.github.io/files/paper5.pdf
+http://qiao1314.github.io/files/paper6.pdf
+http://qiao1314.github.io/files/paper7.pdf
+http://qiao1314.github.io/files/paper8.pdf
+http://qiao1314.github.io/files/paper9.pdf
+http://qiao1314.github.io/files/paper10.pdf
+http://qiao1314.github.io/files/paper11.pdf
+http://qiao1314.github.io/files/paper12.pdf
+http://qiao1314.github.io/files/paper13.pdf
+http://qiao1314.github.io/files/paper14.pdf
+http://qiao1314.github.io/files/paper15.pdf
+http://qiao1314.github.io/files/paper16.pdf
+http://qiao1314.github.io/files/paper17.pdf
+http://qiao1314.github.io/files/paper18.pdf
+http://qiao1314.github.io/files/paper19.pdf
+http://qiao1314.github.io/files/paper20.pdf
+
+http://academicpages.github.io/files/paper1.pdf
+http://academicpages.github.io/files/paper2.pdf
+http://academicpages.github.io/files/paper3.pdf
+http://academicpages.github.io/files/paper4.pdf
+http://academicpages.github.io/files/paper5.pdf
+http://academicpages.github.io/files/paper6.pdf
+http://academicpages.github.io/files/paper7.pdf
+http://academicpages.github.io/files/paper8.pdf
+http://academicpages.github.io/files/paper9.pdf
+http://academicpages.github.io/files/paper10.pdf
+http://academicpages.github.io/files/paper11.pdf
+http://academicpages.github.io/files/paper12.pdf
+http://academicpages.github.io/files/paper13.pdf
+http://academicpages.github.io/files/paper14.pdf
+http://academicpages.github.io/files/paper15.pdf
+http://academicpages.github.io/files/paper16.pdf
+http://academicpages.github.io/files/paper17.pdf
+http://academicpages.github.io/files/paper18.pdf
+http://academicpages.github.io/files/paper19.pdf
+http://academicpages.github.io/files/paper20.pdf
+
+文件地址错误，导致pdf链接打不开
+'''

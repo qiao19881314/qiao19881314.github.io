@@ -1,7 +1,7 @@
 ---
 title: "C3D-ConvLSTM based cow behaviour classification using video data for precision livestock farming"
 collection: publications
-permalink: /publication/2022/1/6-http://qiao1314.github.io/files/paper3.pdf
+permalink: /files/paper3.pdf
 excerpt: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(3).'
 date: 2022/1/6
 venue: 'This paper is about the number 1. The number 4 is left for future work.'

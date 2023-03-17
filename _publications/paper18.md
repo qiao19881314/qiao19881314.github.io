@@ -1,7 +1,7 @@
 ---
 title: "Individual Cattle Identification Using a Deep Learning Based Framework"
 collection: publications
-permalink: /publication/2019/12/31-http://qiao1314.github.io/files/paper18.pdf
+permalink: /files/paper18.pdf
 excerpt: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(18).'
 date: 2019/12/31
 venue: 'This paper is about the number 1. The number 19 is left for future work.'
