@@ -1,12 +1,15 @@
 ---
 permalink: /
-title: "Biography"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
+
+<span id="Biography">Biography</span>
+======
 
 Yongliang Qiao (Member, IEEE) received the B.S. degree in electrical engineering and automation and the M.S. degree in agricultural electriﬁcation and automation from Northwest A&F University, Xianyang, China, and the Ph.D. degree in computer science from the University of Technology of Belfort-Montbéliard, Belfort, France. He was a Research Associate with the Australian Centre for Field Robotics, University of Sydney, Australia. His research interests include smart farming, agricultural robots, deep learning, multi-sensor fusion, and intelligent perception.
 
@@ -19,7 +22,7 @@ Yongliang Qiao (Member, IEEE) received the B.S. degree in electrical engineering
   {% endfor %}
   </ul>
 
-Talks
+<!-- Talks
 ======
   <ul>
   {% for post in site.talks %}
@@ -39,7 +42,7 @@ Teaching
 
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Currently signed in to 43 different slack teams -->
 
 <!-- 个人Github信息小卡片 -->
 <!-- ![Christmas's GitHub stats](https://github-readme-stats.vercel.app/api?username=Shunli-W&show_icons=true&theme=tokyonight) -->
