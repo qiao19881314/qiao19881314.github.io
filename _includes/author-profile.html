@@ -104,13 +104,16 @@
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fab fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{https://scholar.google.it/citations?user=xlV8QE0AAAAJ&hl=en }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+        <li><a href="https://scholar.google.it/citations?user=xlV8QE0AAAAJ&hl=en"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
       {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+        <!-- <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li> -->
+        <!-- <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li> -->
+        
+        <li><a href="{{ author.orcid }}"><img src="/images/orcid.logo.icon.svg" class="ai ai-orcid-square ai-fw" style="height: 14px; width: 14px;"> ORCID</a></li>
       {% endif %}
       {% if author.impactstory %}
         <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i> Impactstory</a></li>
