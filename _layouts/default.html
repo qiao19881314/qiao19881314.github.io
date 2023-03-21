@@ -11,11 +11,12 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <!-- 中间页面的内容 -->
+  <body class="dark">
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
-
+<!-- 中间的内容， 更改布局寻找_page.scss， 搜索“更改” -->
     {{ content }}
 
     <div class="page__footer">

@@ -5,8 +5,8 @@
 #main {
   @include container;
   @include clearfix;
-  margin-top: 2em;
-  padding-left: 1em;
+  margin-top: 2em;   // 主页内容距离上方标题栏的距离
+  padding-left: 3em;  //整个作者介绍侧边栏和内容栏距离整个页面左边的距离
   padding-right: 1em;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
@@ -16,12 +16,29 @@
   }
 }
 
+
+// 更改页面容器宽度
+// 这段代码是使用 SCSS 语法编写的，它使用了三个 mixin：breakpoint()、span() 和 prefix()，并且应用于一个类名为 .page 的元素。
+// breakpoint() mixin 是用于响应式设计的，它可以根据不同的媒体查询断点来设置样式。在这段代码中，breakpoint($large) 意味着
+// 在大屏幕设备上应用这些样式。您需要查看 SCSS 中 $large 所代表的具体像素值或媒体查询规则来确定它的意义。
+// span() mixin 可以将元素分割为等宽的列，这里将 .page 元素分成 12 列，然后将其宽度设置为 10 列的大小，
+// 并将其放置在最后一列。意思就是该元素占据父容器的 10/12 的宽度，并且放置在右侧两列之前。
+// prefix() mixin 和 suffix() mixin 可以添加空白区域（即外边距）到元素的左侧和右侧。在这段代码中，
+// .page 元素的左侧将有 0.5 列的空白区域，右侧将有 2 列的空白区域。
+// 综合起来，这段代码的作用是将.page 元素在大屏幕上设置为占据父容器的 10/12 的宽度，同时将其放置在右侧两列之前，并在左侧添加 0.5 列的空白区域，在右侧添加 2 列的空白区域。
+
 .page {
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include suffix(0.3 of 12);
   }
+// .page {
+//   @include breakpoint($large) {
+//     @include span(10 of 12 last);
+//     @include prefix(0.5 of 12);
+//     @include suffix(2 of 12);
+//   }
 
   .page__inner-wrap {
     @include full();

@@ -4,15 +4,15 @@ main:
     url: \#Biography
 
   - title: "Publications"
-    url: \#publications  
+    url: \#Publications  
     # url: /publications/
 
   - title: "Network"
     url: \#Network    
     # url: /talks/    
 
-  - title: "Teaching"
-    url: \#teaching   
+  # - title: "Teaching"
+  #   url: \#teaching   
     # url: /teaching/    
     
   # - title: "Portfolio"
