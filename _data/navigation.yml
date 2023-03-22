@@ -7,9 +7,9 @@ main:
     url: \#Publications  
     # url: /publications/
 
-  - title: "Network"
-    url: \#Network    
-    # url: /talks/    
+  # - title: "Network"
+  #   url: \#Network    
+  #   # url: /talks/    
 
   # - title: "Teaching"
   #   url: \#teaching   
