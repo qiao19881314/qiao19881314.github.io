@@ -12,9 +12,12 @@ layout: compress
   </head>
 
   <!-- 中间页面的内容 -->
-  <body class="dark">
+  <!-- class="dark" -->
+  <!-- <body>  -->
 
-    {% include browser-upgrade.html %}
+    <body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" class="page-wrapper" data-new-gr-c-s-check-loaded="14.1027.0" data-gr-ext-installed="" style="opacity: 1.00333; visibility: visible;">
+
+      {% include browser-upgrade.html %}
     {% include masthead.html %}
 <!-- 中间的内容， 更改布局寻找_page.scss， 搜索“更改” -->
     {{ content }}

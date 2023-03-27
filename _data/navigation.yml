@@ -7,16 +7,17 @@ main:
     url: \#Publications  
     # url: /publications/
 
-  # - title: "Network"
-  #   url: \#Network    
-  #   # url: /talks/    
+  - title: "News"
+    url: \#News    
 
-  # - title: "Teaching"
-  #   url: \#teaching   
-    # url: /teaching/    
+  - title: "Service"
+    url: \#Services   
+
+  - title: "Talks"
+    url: \#Talks   
     
-  # - title: "Portfolio"
-  #   url: /portfolio/
+  - title: "Contact"
+    url: \#Contact  
         
   # - title: "Blog Posts"
   #   url: /year-archive/

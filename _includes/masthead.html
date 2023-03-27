@@ -1,42 +1,22 @@
 {% include base_path %}
-
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://qiao19881314.github.io/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    },
-    "url": "https://qiao19881314.github.io/"
-  }
-  </script>
-
+ 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <!--.github.io\css\wowchemy.246563c78e87c9f0ab2a19340d3449fd.css ====.dark .navbar{background -->
-      <nav id="site-nav" class="greedy-nav navbar">
+      <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="dark"><a href="{{ base_path }}/"><h1>{{ site.title }}</h1></a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <!-- <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li> -->
-            <li class="dark"><a href="{{ link.url }}"><h1>{{ link.title }}</h1></a></li>
+            <li class="masthead__menu-item"><a href="{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
-
-        <!-- <li class="nav-item">
-          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-        </li> -->
-
       </nav>
     </div>
   </div>
