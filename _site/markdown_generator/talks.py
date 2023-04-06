@@ -11,7 +11,7 @@
 
 import pandas as pd
 import os
-
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # ## Data format
 # 
@@ -34,7 +34,7 @@ import os
 # In[3]:
 
 talks = pd.read_csv("talks.tsv", sep="\t", header=0)
-talks
+
 
 
 # ## Escape special characters

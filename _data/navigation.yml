@@ -3,22 +3,30 @@ main:
   - title: "Home"
     url: \#Biography
 
+  - title: "News"
+    url: \#News    
+
   - title: "Publications"
     url: \#Publications  
     # url: /publications/
 
-  - title: "News"
-    url: \#News    
+  - title: "Talks"
+    url: \#Talks   
+    # url: /talks/
+
+  - title: "Patent"
+    url: \#Patent  
+
+  - title: "Honour"
+    url: \#Honour   
 
   - title: "Service"
     url: \#Services   
 
-  - title: "Talks"
-    url: \#Talks   
-    
   - title: "Contact"
     url: \#Contact  
-        
+
+  
   # - title: "Blog Posts"
   #   url: /year-archive/
     

@@ -188,7 +188,12 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-
+  patent:
+    output: true
+    permalink: /:collection/:path/
+  honour:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -245,6 +250,7 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+
 
 # Sass/SCSS
 sass:

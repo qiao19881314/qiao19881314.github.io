@@ -1,5 +1,17 @@
 title	type	url_slug	venue	date	location	talk_url	description
-Talk 1 on Relevant Topic in Your Field	Talk	talk-1	UC San Francisco, Department of Testing	2012-03-01	San Francisco, California		This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!
-Tutorial 1 on Relevant Topic in Your Field	Tutorial	tutorial-1	UC-Berkeley Institute for Testing Science	2013-03-01	Berkeley CA, USA	http://exampleurl.com	This is a description of your tutorial, note the different field in type. This is a markdown files that can be all markdown-ified like any other post. Yay markdown!
-Talk 2 on Relevant Topic in Your Field	Talk	talk-2	London School of Testing	2014-02-01	London, UK	http://example2.com	This is a description of your talk, which is a markdown files that can be all markdown-ified like any other post. Yay markdown!
-Conference Proceeding talk 3 on Relevant Topic in Your Field	Conference proceedings talk	talk-3	Testing Institute of America 2014 Annual Conference	2014-03-01	Los Angeles, CA		This is a description of your conference proceedings talk, note the different field in type. You can put anything in this field.
+Image Based Place Recognition and Lidar Validation for Vehicle Localization	Presentation	Presentation-1	MICAI-2014	2014-11-16	Tuxtla Gutierrez, Mexico	https://dblp.org/db/conf/micai/micai2014-2.html/	
+Place Recognition Based Visual Localization Using LBP Feature and SVM	Presentation	Presentation-2	MICAI-2015	2015-10-25	Cuernavaca, Mexico	http://www.micai.org/2015/	
+Visual Localization using Sequence Matching Based on Multi-feature Combination	Presentation	Presentation-3	ACIVS-2016	2016-10-24	Lecce, Italy	http://acivs.org/acivs2016/	
+Visual localization based on sequence matching using ConvNet features	Presentation	Presentation-4	IEEE IECON-2016	2016-10-24	Florence, Italy	http://www.iecon2016.org/	
+Visual Localization Based on Place Recognition Using Multi-feature Combination (D-λLBP++HOG)	Presentation	Presentation-5	ACIVS-2017	2017-09-18	Belgium	http://acivs.org/acivs2017/	
+Individual Cattle Identification Using a Deep Learning Based Framework	Presentation	Presentation-6	IFAC-2019	2019-10-24	Sydney, Australia	http://www.robotics.unsw.edu.au/agricontrol2019/	
+BiLSTM-based Individual Cattle Identification for Automated Precision Livestock Farming	Presentation	Presentation-7	IEEE CASE-2020	2020-08-20	Zoom meeting	https://www.imse.hku.hk/case2020/	
+Data Augmentation for Deep Learning based Cattle Segmentation in Precision Livestock Farming	Presentation	Presentation-8	IEEE CASE-2020	2020-08-20	Zoom meeting	https://www.imse.hku.hk/case2020/	
+Visual localization in changing environments	Talk	talk-1	Heidelberg University	2015-09-07			
+visual localization in changing environments for intelligent vehicle	Talk	talk-2	Northwest A&F University	2018-09-23			
+Deep learning based visual localization in changing environments	Talk	talk-3	School of Computer Science, Shaanxi Normal University	2018-09-26			
+The applications of Robotic and deep learning in smart farming	Talk	talk-4	College of Computer & Information Science, Southwest University	2018-10-06			
+Robotic and deep learning in smart farming	Talk	talk-5	Taiyuan University of Technology	2019-11-23			
+Robotic and deep learning in precision agriculture	Talk	talk-6	Yangzhou University	2019-11-27			
+Research progress of smart agriculture based-on artificial intelligence androbots	Talk	talk-7	Shanghai University	2022-09-28			
+Research progress in smart agriculture based on deep learning and robotics	Talk	talk-8	Nanjing Agricultural University	2022-11-16			
