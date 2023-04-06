@@ -26,7 +26,7 @@ Yongliang Qiao (Member, IEEE) received the B.S. degree in electrical engineering
   </ul>
 
 <span id="Talks" class="section-subheading">Talks and presentations</span>
-  {% include talkmap.html %}
+
   <ul>
   {% for post in site.talks reversed %}
     {% include archive-single-talk.html %}

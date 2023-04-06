@@ -64,46 +64,49 @@ def html_escape(text):
 import os
 for row, item in publications.iterrows():
     
-    md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
+    md_filename = str(item.title).replace(":", " ") + ".md"
     # html_filename = str(item.pub_date) + "-" + item.url_slug
-    html_filename = item.url_slug  # paper_name
-    year = item.pub_date[:4]
+    html_filename = str(item.title).replace(":", " ")  # paper_name
+    # year = item.pub_date[:4]
     
     ## YAML variables
     
-    md = "---\ntitle: \""   + item.title + '"\n'
+    md = "---\ntitle: "   
+    md += item.title.replace(":", " ") + '\n'
     
     md += """collection: publications"""
     
     # md += """\npermalink: /publication/""" + html_filename
-    md += """\npermalink: /files/""" + html_filename
+    md += """\npermalink: /publications/""" + html_filename
     
-    if len(str(item.excerpt)) > 5:
-        md += "\nexcerpt: '" + html_escape(item.excerpt) + "'"
+    # if len(str(item.excerpt)) > 5:
+    #     md += "\nexcerpt: '" + html_escape(item.excerpt) + "'"
     
-    md += "\ndate: " + str(item.pub_date) 
+    # md += "\ndate: " + str(item.pub_date) 
     
-    md += "\nvenue: '" + html_escape(item.venue) + "'"
+    # md += "\nvenue: '" + html_escape(item.venue) + "'"
     
-    if len(str(item.paper_url)) > 5:
-        md += "\npaperurl: '" + item.paper_url + "'"
+    # if len(str(item.paper_url)) > 5:
+    #     md += "\npaperurl: '" + item.paper_url + "'"
     
-    md += "\ncitation: '" + html_escape(item.citation) + "'"
+    md += "\ncitation: " + html_escape(item.citation.replace(":", ","))
     
     md += "\n---"
+
     
     ## Markdown description for individual page
     
-    if len(str(item.paper_url)) > 5:
-        md += "\n\n<a href='" + item.paper_url + "'>Download paper here</a>\n" 
+    # if len(str(item.paper_url)) > 5:
+    #     md += "\n\n<a href='" + item.paper_url + "'>Download paper here</a>\n" 
         
-    if len(str(item.excerpt)) > 5:
-        md += "\n" + html_escape(item.excerpt) + "\n"
+    # if len(str(item.excerpt)) > 5:
+    #     md += "\n" + html_escape(item.excerpt) + "\n"
         
-    md += "\nRecommended citation: " + item.citation
-    md_filename = os.path.basename(os.path.splitext(html_filename)[0]+".md")  # md和pdf保持一直
+    # md += "\nRecommended citation: " + item.citation
+    
+    md_filename = (html_filename+".md")  # md和pdf保持一直
        
-    with open("../_publications/" + md_filename, 'w') as f:
+    with open("../_publications/" + md_filename, 'w', encoding="utf-8") as f:
         f.write(md)
 
 

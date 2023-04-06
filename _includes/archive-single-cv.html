@@ -34,8 +34,9 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
+    <!-- 下一句不能删除， 为了显示contact -->
     {% if post.read_time %}<h4 class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</h4>{% endif %}
-    {% if post.venue%}<h4 class="archive__item-excerpt" itemprop="description" style="color: gray;">{{ post.citation }}</h4> {% endif %}
+    <h4 class="archive__item-excerpt" itemprop="description" style="color: gray;">{{ post.citation }}</h4> 
     </li>
  </article>
 </div>
