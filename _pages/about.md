@@ -15,6 +15,9 @@ Yongliang Qiao (Member, IEEE) received the B.S. degree in electrical engineering
 
 {% include education.html %}
 
+<span id="News" class="section-subheading">News</span>
+{% include News.html %}
+
 <span id="Publications" class="section-subheading">Publications</span>
   <ul>
   {% for post in site.publications reversed %}
@@ -22,20 +25,35 @@ Yongliang Qiao (Member, IEEE) received the B.S. degree in electrical engineering
   {% endfor %}
   </ul>
 
+<span id="Talks" class="section-subheading">Talks and presentations</span>
 
-<span id="News" class="section-subheading">News</span>
-{% include News.html %}
+  <ul>
+  {% for post in site.talks reversed %}
+    {% include archive-single-talk.html %}
+  {% endfor %}
+  </ul>
 
+
+<span id="Patent" class="section-subheading">Patent</span>
+  <ul>
+  {% for post in site.patent reversed %}
+    {% include archive-single-patent.html %}
+  {% endfor %}
+  </ul>
+
+<span id="Honour" class="section-subheading">Honour</span>
+  <ul>
+  {% for post in site.honour reversed %}
+    {% include archive-single-honour.html %}
+  {% endfor %}
+  </ul>
 
 <span id="Services"></span>
-{% include service.html %}
-
-<span id="Talks" class="section-subheading">Talks</span>
-
-None
+  {% include service.html %}
 
 <span id="Contact" class="section-subheading"></span>
   {% include Contact.html %}
+
 
 <!-- Talks
 ======
