@@ -4,7 +4,7 @@ collection: talks
 type: "Presentation"
 permalink: /talks/2016-10-24-Presentation-3
 venue: "ACIVS-2016"
-date: 2016-10-24
+date: 2016/10/24
 location: "Lecce, Italy"
 ---
 

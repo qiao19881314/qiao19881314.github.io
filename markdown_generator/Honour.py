@@ -70,6 +70,8 @@ for row, item in talks.iterrows():
     html_filename = str(row)
     md = "---\n"
     md += "title: " + item.title + '\n'  # 里面不能有四个双引号， 必须单引号和双引号互相嵌套
+    if str(item.link) != 'nan':
+        md += "link: " + str(item.link) + '\n'  # 里面不能有四个双引号， 必须单引号和双引号互相嵌套
     md += "collection: honour" + "\n"
     md += "permalink: /honour/" + html_filename + "\n"  # 修改
     md += "---\n"  # 必须保留

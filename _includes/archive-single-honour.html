@@ -32,7 +32,8 @@
         {% if post.link %}
           <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
         {% else %}
-          <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <!-- <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a> -->
+          {{ title }}
         {% endif %}
         <!-- {% if post.excerpt %}</h4>{% endif %} -->
         <!-- <h4 style="margin: 0; margin-bottom: 10px;" class="page__meta"> <span style="color:red">No: {{ post.no_ }}</span></h4> -->

@@ -2,9 +2,9 @@
 title: "Data Augmentation for Deep Learning based Cattle Segmentation in Precision Livestock Farming"
 collection: talks
 type: "Presentation"
-permalink: /talks/2020-08-20-Presentation-8
+permalink: /talks/2020-8-20-Presentation-8
 venue: "IEEE CASE-2020"
-date: 2020-08-20
+date: 2020/8/20
 location: "Zoom meeting"
 ---
 

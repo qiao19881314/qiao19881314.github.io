@@ -4,7 +4,7 @@ collection: talks
 type: "Presentation"
 permalink: /talks/2014-11-16-Presentation-1
 venue: "MICAI-2014"
-date: 2014-11-16
+date: 2014/11/16
 location: "Tuxtla Gutierrez, Mexico"
 ---
 

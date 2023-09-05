@@ -4,7 +4,7 @@ collection: talks
 type: "Presentation"
 permalink: /talks/2019-10-24-Presentation-6
 venue: "IFAC-2019"
-date: 2019-10-24
+date: 2019/10/24
 location: "Sydney, Australia"
 ---
 
