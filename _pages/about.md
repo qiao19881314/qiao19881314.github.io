@@ -11,7 +11,7 @@ redirect_from:
 <span id="Biography" class="section-subheading">Biography</span>
 <!-- ====== -->
 
-Yongliang Qiao (Member, IEEE) received the B.S. degree in electrical engineering and automation and the M.S. degree in agricultural electriﬁcation and automation from Northwest A&F University, Xianyang, China, and the Ph.D. degree in computer science from the University of Technology of Belfort-Montbéliard, Belfort, France. He was a Research Associate with the Australian Centre for Field Robotics, University of Sydney, Australia. His research interests include smart farming, agricultural robots, deep learning, multi-sensor fusion, and intelligent perception.
+Yongliang Qiao (Member, IEEE) is an Research fellow in Australian Institute for Machine Learning (AIML), The University of Adelaide. Before this,  he was a Research Associate with the Australian Centre for Field Robotics (ACFR), University of Sydney. He receieved Ph.D. degree in computer science from the University of Burgundy-Franche-Comté in France. His research interests include artificial intelligence, agricultural robots, smart farming, and intelligent perception. Focusing on "Agricultural Intelligence and Agricultural Robots", as the Session Chairman, he has hosted IEEE IROS, IEEE CASE, IFAC AGRICONTROL and other international conferences.
 
 {% include education.html %}
 
